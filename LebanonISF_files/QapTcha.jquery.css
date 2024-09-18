@@ -1,0 +1,10 @@
+/*****************/
+/** QapTcha CSS **/
+/*****************/
+.QapTcha {float:left;margin-top:20px;width:252px;}
+.QapTcha .clr{clear:both}
+.QapTcha .bgSlider {width:145px;height:9px;background-color:#ffffff;margin:10px auto;}
+.QapTcha .Slider {width:16px;height:13px;background:transparent url('../images/bg_draggable_qaptcha.jpg') no-repeat;cursor:e-resize;position:relative;top:-2px;left:0}
+.QapTcha .TxtStatus {width:100%;margin-top:7px;text-align:center;color:#bb2828;font-family:Verdana;font-size:8px;clear:both}
+.QapTcha .dropSuccess {color:#ffffff;}
+.QapTcha .dropError {color:#000000;}
