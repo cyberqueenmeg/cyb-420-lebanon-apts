@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://lebanoncert.org/en/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="chrome-extension://jcacnejopjdphbnjgfaaobbfafkihpep/hive_keychain.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="LEBANON CERT CYBERSECURITY EMPOWERING RESEARCH TEAM">
+  <meta name="author" content="lebanoncert.org">
+  <link rel="icon" href="https://storage.googleapis.com/cdn.lebanoncert.org/icons/favicon.ico">
+  
+
+<title>Lebanon CERT</title>
+<!-- Bootstrap core CSS -->
+<link href="./LebanonCERT_files/bootstrap.min.css" rel="stylesheet">
+<!-- main css file -->
+<link href="./LebanonCERT_files/main.css" rel="stylesheet">
+<link media="screen" href="./LebanonCERT_files/style.css" rel="stylesheet">
+  
+<style>
+  .vt-augment {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vt-augment.drawer {
+    display: none;
+    width: 700px;
+    background: white;
+    border: 1px solid #e6e6e6;
+    text-align: left;
+    z-index: 102;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    box-shadow: -4px 5px 8px -3px rgba(17, 17, 17, .16);
+    animation: slideToRight 0.5s 1 forwards;
+    transform: translateX(100vw);
+  }
+  .vt-augment.drawer[opened] {
+    display: flex;
+    animation: slideFromRight 0.2s 1 forwards;
+  }
+  .vt-augment > .spinner {
+    position: absolute;
+    z-index: 199;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border: 8px solid rgba(0, 0, 0, 0.2);
+    border-left-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.2s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideToRight {
+    100% {
+      transform: translateX(100vw);
+      display: none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .vt-augment.drawer {
+      width: 100%;
+    }
+  }
+</style></head>
+
+<body>
+  <!-- start body -->
+  <div class="preloader" style="display: none;">
+    <!-- start preloader -->
+    <div class="preloader-container">
+      <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+        <circle fill="#004777" stroke="none" cx="6" cy="50" r="6">
+          <animatetransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1"></animatetransform>
+        </circle>
+        <circle fill="#004777" stroke="none" cx="30" cy="50" r="6">
+          <animatetransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2"></animatetransform>
+        </circle>
+        <circle fill="#004777" stroke="none" cx="54" cy="50" r="6">
+          <animatetransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3"></animatetransform>
+        </circle>
+      </svg>
+      <span>loading</span>
+    </div>
+  </div><!-- end preloader -->
+  
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition front-rtle" style="height: 931px;">
+      
+    <!-- start header -->
+
+<!-- particles -->
+    <div class="bg_overlay_header">
+      <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="3296" height="1200"></canvas></div>
+    </div>
+	      
+    <!-- Fixed navbar -->
+    <nav id="coodiv-navbar-header" class="navbar navbar-expand-md navbar-light  fixed-header-layout">
+      <div class="container main-header-coodiv-s">
+        <a class="navbar-brand keychainify-checked" href="https://lebanoncert.org/en/">
+          <img class="w-logo" src="./LebanonCERT_files/logo-s.png" alt="Lebanon CERT Logo" style="opacity: 0;">
+          <img class="b-logo" src="./LebanonCERT_files/logo-s.png" alt="Lebanon CERT Logo">
+        </a>
+        <button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto js-offcanvas-has-events" data-toggle="offcanvas" data-target="#offcanvas-menu-home">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-offcanvas offcanvas-transform js-offcanvas-done" id="offcanvas-menu-home">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link keychainify-checked" href="https://lebanoncert.org/en/"><i class="fa fa-home"></i> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link keychainify-checked" href="https://lebanoncert.org/en/security-news">Security News </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link keychainify-checked" href="https://lebanoncert.org/en/statistics">Statistics</a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link keychainify-checked" href="https://lebanoncert.org/en/become-sponsor">Become a Sponsor </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link keychainify-checked" href="https://lebanoncert.org/en/contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="header-user-info-coodiv" id="subscribenow">
+          <li class="dropdown"><a role="button" id="header-login-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://lebanoncert.org/en/#" class="keychainify-checked">Subscribe to Report</a>
+            <div class="dropdown-menu coodiv-dropdown-header user-login-dropdown" aria-labelledby="header-login-dropdown">
+              <form class="user-login-dropdown-form" data-form="validate" method="post" action="https://lebanoncert.org/en/">
+                <div class="form-group name">
+                  <input type="text" name="name" placeholder="Your Name" class="form-control" required="">
+                  <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group email">
+                  <input type="email" name="email" placeholder="Your Email" class="form-control" required="">
+                  <i class="fas fa-at"></i>
+                </div>
+				<button data-toggle="tooltip" data-placement="left" id="submit" title="" class="user-login-dropdown-form-button" data-original-title="Subscribe"><i class="fas fa-angle-right"></i></button>
+
+
+              </form>
+            </div>
+            <!-- end user header dropdown -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  
+
+
+  <div class="mt-auto header-top-height"></div>
+  <main class="container mb-auto">
+    <div class="carousel carousel-main flickity-enabled" tabindex="0">
+      
+    <div class="flickity-viewport" style="height: 278.703px; touch-action: pan-y;"><div class="flickity-slider" style="left: 0px; transform: translateX(0%);"><div class="carousel-cell is-selected" aria-selected="true" style="position: absolute; left: 0%;">
+        <h3 class="mt-2 main-header-text-title">Lebanon CERT</h3>
+        <h4 class="mt-3 main-header-text-title"><br>Lebanon Cybersecurity Empowering Research Team<span class="main-text">A Non-Profit Organization Focused On Providing A More Secure Cyber Space In Lebanon</span></h4>
+        <div class="row justify-content-center domain-search-row">
+          <div class="col-md-4">
+            <div class="button-row text-center">
+            </div>
+          </div>
+
+        </div>
+      </div></div></div></div>
+  </main>
+  <div class="mt-auto"></div>
+</div><!-- end header -->
+
+
+<section>
+  <div class="container">
+    <div class="row mb-1 justify-content-start futures-version-2">
+      <div class="col-md-4">
+        <div class="futures-version-2-box h-100 d-flex flex-column">
+          <i class="bredhicon-download-cloud"></i>
+          <h5>Who We Are</h5>
+          <p>Early 2019 a group of <strong> Lebanese security experts from various sectors </strong> had a chance to meet and share their concerns about evolved cyber security threats and their direct impact to homeland country. They volunteered to
+            take a step further in provisioning their collaborative expertise to launch the Lebanon CERT organization.</p>
+          <div class="text-center mt-auto">
+            <a class="more-btn keychainify-checked" href="https://lebanoncert.org/en/blog/story_mission">Read More</a>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="col-md-4 ">
+        <div class="futures-version-2-box h-100 d-flex flex-column">
+          <!-- 	<span class="free-badge"><b></b>free</span>
+ --> <i class="bredhicon-share"></i>
+          <h5 class="align-content-md-center">Reported Vulnerable Systems</h5>
+          <div class="counter ">
+            <div class="count-up h1 font-weight-bolder text-center" data-from="10" data-to="2212" data-time="1000">2212</div>
+            <a style="text-align: center; display: block;font-size: 13px;">Updated on: 05-01-2022 23:00</a>
+          </div>
+
+          <p> We recently <strong> conducted several studies </strong> to assess the overall attack surface of Lebanon. The investigation comprised 612608 IP addresses and 198354 domains. <strong> 2212 critical vulnerabilities </strong> were uncovered.</p>
+          <div class="text-center mt-auto">
+            <a class="more-btn keychainify-checked" href="https://lebanoncert.org/en/blog/vulnerabilities_study">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="futures-version-2-box h-100 d-flex flex-column">
+          <i class="bredhicon-mic"></i>
+          <h5>Statistics</h5>
+          <img width="107%" src="./LebanonCERT_files/stats.png" ,="" alt="Statistics">
+          <p>Using our <strong> intelligence tools </strong>, we accuretaly collect and share relevant data in real-time.</p>
+          <div class="text-center mt-auto">
+
+            <a class="more-btn keychainify-checked" href="https://lebanoncert.org/en/statistics">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="padding-100-0 bg-dark">
+  <div class="container">
+    <h3 class="main-header-text-title white-text2">WHO WE SERVE</h3>
+    <p class="map-comment-area-text white-text2">We collaborate broadly with all business sizes, Internet service providers, law inforcements, and academic researchers to improve cybersecurity in Lebanon, reduce the impact of cyber threats, and
+      raise the security awareness.</p>
+    <div class="row justify-content-center mr-tp-40 nav our-help-center-tabs-nav" id="nav-tab" role="tablist">
+      <a class="col-md-4 mt-2 keychainify-checked" id="nav-first-help-categorie-tab" data-toggle="tab" href="https://lebanoncert.org/en/#nav-first-help-categorie" role="tab" aria-controls="nav-first-help-categorie" aria-selected="false">
+        <div class="support-contact-us-box2 h-100 d-flex flex-column">
+          <i class="h-flaticon-006-cloud"></i>
+          <h5>Industry Sectors</h5>
+          <p>Lebanon CERT enables businesses to acquire a <strong> big picture of their Internet-facing assets </strong> and reconmmends effective measures to significantly improve their security posture.</p>
+        </div>
+      </a>
+      <a class="col-md-4 mt-2 keychainify-checked" id="nav-second-help-categorie-tab" data-toggle="tab" href="https://lebanoncert.org/en/#nav-second-help-categorie" role="tab" aria-controls="nav-second-help-categorie-tab" aria-selected="false">
+        <div class="support-contact-us-box2 h-100 d-flex flex-column">
+          <i class="h-flaticon-050-servers"></i>
+          <h5>Law Enforcement</h5>
+          <p>Lebanon CERT strengthens law enforcements in reducing the impact of cyber threats. We provide relevant <strong> smart data and threat reports </strong> using an innovative reliable framework.</p>
+        </div>
+      </a>
+      <a class="col-md-4 mt-2 active keychainify-checked" id="nav-third-help-categorie-tab-tab" data-toggle="tab" href="https://lebanoncert.org/en/#nav-third-help-categorie" role="tab" aria-selected="true">
+        <div class="support-contact-us-box2 h-100 d-flex flex-column">
+          <i class="e-flaticon-022-chip"></i>
+          <h5> Research Institutes</h5>
+          <p>Lebanon CERT supports universities and research institutes in conducting <strong> empirical studies </strong> on detecting critical vulnerabilities, performing threat analysis, and demystifying malware traffic.</p><p>
+        </p></div>
+      </a>
+    </div>
+
+  </div>
+</section>
+<section class="padding-0-100 position-relative">
+  <div class="container">
+
+    <div class="row justify-content-between">
+
+      <div class="col-md-7 about-us-img-section">
+        <img src="./LebanonCERT_files/dashboard.png" alt="Lebanon CERT Dashboard">
+      </div>
+
+      <div class="col-md-4 side-text-right-container d-flex mx-auto flex-column">
+        <div class="mb-5"></div>
+        <h2 class="side-text-right-title f-size25">WHAT WE DO</h2>
+        <p class="side-text-right-text f-size16">
+          We constantly <strong> monitor the attack surface  </strong> over country wide IPv4 space and domain names. <br>
+          Essentials of this process include:<br>
+          a) Regular <strong> lookups for newly published vulnerabilities  </strong> rated critical in the cyber security area.
+          b) <strong> Identification of threats </strong> that affect confidentiality, integrity and availability of all enumerated systems using hyper intelligent analysis process.
+          c) Pushing towards lowering risk levels by <strong> informing accountable owners of impacted systems </strong> to take the necessary measures.<br>
+        </p>
+        <p>
+          <!--<a class="side-text-right-button-blue" href="#">Find Out More</a>-->
+        </p>
+        <div class="mt-auto"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="footer-section-banner">
+  <div class="container">
+    <div class="row free-trial-footer-banner mobile-form">
+      <div class="col-md-8">
+        <h5 class="free-trial-footer-banner-title">subscribe now and have to recieve weekly reports</h5>
+        <p class="free-trial-footer-banner-text">Lebanon CERT offers all services free of charge, for public benefit. We don’t sell data. Our revenue comes from sponsorships, grants, and charitable donations.</p>
+      </div>
+
+      <div class="col-md-4 free-trial-footer-links d-flex mx-auto flex-column">
+        <div class="mb-auto"></div>
+        <div class="mb-auto">
+
+  <form class="user-login-dropdown-form" data-form="validate" method="post" action="https://lebanoncert.org/en/">
+                <div class="form-group name">
+                  <input type="text" name="name" placeholder="Your Name" class="form-control" required="">
+                  <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group email">
+                  <input type="email" name="email" placeholder="Your Email" class="form-control" required="">
+                  <i class="fas fa-at"></i>
+                </div>
+				<button data-toggle="tooltip" data-placement="left" id="submit" title="" class="user-login-dropdown-form-button" data-original-title="Subscribe"><i class="fas fa-angle-right"></i></button>
+
+
+              </form>        </div>
+        <div class="mt-auto"></div>
+      </div>
+    </div>
+
+	<div class="row free-trial-footer-banner js-func ">
+      <div class="col-md-8">
+        <h5 class="free-trial-footer-banner-title">Subscribe Now To Recieve Attack Surface Reports in The Future</h5>
+        <p class="free-trial-footer-banner-text">Lebanon CERT offers all services free of charge, for public benefit. We don’t sell data. Our revenue comes from sponsorships, grants, and charitable donations.</p>
+      </div>
+
+      <div class="col-md-4 free-trial-footer-links d-flex mx-auto flex-column">
+        <div class="mb-auto"></div>
+        <div class="mb-auto">
+          <a class="sign-btn keychainify-checked" id="header-login-dropdown" onclick="subscribe()" href="https://lebanoncert.org/en/#">Subscribe Now</a>
+        </div>
+        <div class="mt-auto"></div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+  <section class="footer-section">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-9 quiq-links-footer">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="quiq-links-footer-title">Recommended Links</h5>
+
+              <ul class="quiq-links-footer-ul" style="padding-left: 0;">
+                <li><a target="_blank" href="https://www.reddit.com/r/netsec/" class="keychainify-checked">Reddit Netsec</a></li>
+                <li><a target="_blank" href="https://thehackernews.com/" class="keychainify-checked">Hacker News</a></li>
+                <li><a target="_blank" href="https://github.com/nomi-sec/PoC-in-GitHub" class="keychainify-checked">PoC-in-Github</a></li>
+                <li><a target="_blank" href="https://www.packtpub.com/" class="keychainify-checked">Packtpub</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5 class="quiq-links-footer-title">PGP Key</h5>
+              <pre class="text-muted">01EF 15ED D31C
+EAB2 DADD DB52
+C45B E0F5 B2A0
+1703    </pre>
+              <button type="button" class="btn btn-sm bg-dark-blue btn-primary" data-toggle="modal" data-target="#pgpModal">
+                Get Key
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="pgpModal" tabindex="-1" role="dialog" aria-labelledby="pgpModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header blue-back">
+                      <h5 class="side-text-right-title text-white mb-0" id="pgpModalLabel">Lebanon CERT Key</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <pre><code id="copy-input">-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEXx/fVxYJKwYBBAHaRw8BAQdAuNYe7x35gOf1HBuBtL+xRgrs67HU0h/VzLjx
+O7TQblq0I0xlYmFub24gQ0VSVCA8aW5mb0BsZWJhbm9uY2VydC5vcmc+iJYEExYI
+AD4WIQQB7xXt0xzqstrd21LEW+D1sqAXAwUCXx/fVwIbAwUJCWYBgAULCQgHAgYV
+CgkICwIEFgIDAQIeAQIXgAAKCRDEW+D1sqAXAx9EAP9Q8UBuyvsutHhehDCWX4X4
+t3T/wp9evrOuHetgm9BrgwD9F5SBc68SBzuXF+rmkRh8QdvPzjCG2v9wDp610PL9
+wga4OARfH99XEgorBgEEAZdVAQUBAQdAEUQzHRHWaNB5RVI9/gQih789XwNXHdMF
+hbfqRnD4nCoDAQgHiH4EGBYIACYWIQQB7xXt0xzqstrd21LEW+D1sqAXAwUCXx/f
+VwIbDAUJCWYBgAAKCRDEW+D1sqAXAzstAQDw6dI/jFE6i/05h3vxRMcPS3FWRRS6
+/Vh8pRKP10IZlQD+O19ePLjaTXjPUhAtLut/S8LpJQUfgD3TSdPyiTMfCg0=
+=U9yD
+-----END PGP PUBLIC KEY BLOCK-----
+</code></pre>
+                    </div>
+                    <div class="modal-footer">
+                      <!--<button id="copy" data-clipboard-target="#copy-input" type="button" class="btn btn-primary blue-back" data-dismiss="alert"><i class="far fa-clipboard"></i> Copy</button>-->
+                      <a href="https://storage.googleapis.com/cdn.lebanoncert.org/keys/cert_pgp_pub.asc" download="" type="button" class="btn btn-secondary blue-back keychainify-checked"><i class="fas fa-download"></i> Download</a>
+
+
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 contact">
+          <h5 class="quiq-links-footer-title">Contact</h5>
+
+          <div class="footer-contact-method">
+            <a href="https://lebanoncert.org/en/#" class="keychainify-checked">
+              <span>email us :</span>
+              <b>info@lebanoncert.org</b>
+              <i class="fas fa-at"></i>
+            </a>
+
+            <a href="https://lebanoncert.org/en/#" class="keychainify-checked">
+              <span>call us :</span>
+              <b>00961 7 68 57 134</b>
+              <i class="fas fa-phone"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mr-tp-40 row justify-content-between footer-area-under">
+        <div class="col-md-8">
+          <a href="https://lebanoncert.org/en/#" class="keychainify-checked"><img class="footer-logo-blue" src="./LebanonCERT_files/logo-w.png" alt="Lebanon CERT Logo"></a>
+
+        </div>
+
+        <div class="col-md-4 row d-flex flex-row-reverse pr-4">
+          <ul class=" under-footer-ullist">
+            <li class="footer-lang-changer">
+              <div class="lang-changer-drop-up" style="">
+                <a class="menu-btn-changer keychainify-checked" role="button" href="https://lebanoncert.org/ar/" style="margin: 0;"><i class="fas fa-globe-asia"></i> العربية</a>
+              </div>
+
+            </li>
+          </ul>
+          <!--
+          <ul class=" under-footer-ullist text-left">
+            <li class="footer-social-icons" style="margin-top: 0px !important;">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>-->
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- jquery -->
+  <script src="./LebanonCERT_files/jquery.min.js"></script>
+  <script src="./LebanonCERT_files/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="./LebanonCERT_files/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="./LebanonCERT_files/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="./LebanonCERT_files/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="./LebanonCERT_files/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="./LebanonCERT_files/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="./LebanonCERT_files/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="./LebanonCERT_files/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="./LebanonCERT_files/jquery.touchSwipe.min.js"></script>
+  <!-- seconde style additionel JavaScript -->
+  <!--<script src="https://storage.googleapis.com/cdn.lebanoncert.org/js/particles-code.js"></script>-->
+  <!--<script src="https://storage.googleapis.com/cdn.lebanoncert.org/js/particles.js"></script>-->
+  <script src="./LebanonCERT_files/particles.js"></script>
+  <script src="./LebanonCERT_files/app.js"></script>
+  <script src="./LebanonCERT_files/smoothscroll.js"></script>
+  <script src="./LebanonCERT_files/counter.js"></script>
+    <!--<script src="https://storage.googleapis.com/cdn.lebanoncert.org/js/overlay.js"></script>-->
+
+    <!--<script src="https://storage.googleapis.com/cdn.lebanoncert.org/js/clipboard.min.js"></script>-->
+
+  <script>
+    $(".modal").on("shown.bs.modal", function() {
+      console.log('a', Clipboard, $('#copy'), $("#copy-input").val());
+      var clipboard = new Clipboard('#copy')
+    });
+  </script>
+  
+
+
+<div id="toTop" class="btn" style="display: none;"><span class="fa fa-chevron-up"></span></div><div>
+    <div class="vtResetstyles">
+    <div id="vtoverlay" class="vtoverlay vthidden w3-animate-right
+    w3-container">
+    <div class="vtmain vthidden" id="vtmain">
+      <div class="vtcontactus">
+          <a id="linktest" href="https://www.virustotal.com/" class="keychainify-checked">
+            <img class="vtlogo-popup" style=" width: 32px;
+            height: 32px;" src="chrome-extension://efbjojhplkelaegfbieplglfidafgoka/icons/vt-logo.svg">
+          </a>
+          <a href="https://www.virustotal.com/" class="keychainify-checked">VT4Browsers
+          </a>
+      </div>
+      <span id="vtclose"><strong>X</strong></span>
+      <div class="vttextpopup vthidden" id="statustext">
+        <div class="vtscanstatus" id="vtscanstatus"></div>
+        <div class="vtprogress vthidden" id="vtprogress"></div>
+        <br id="brfile">
+        <div class="vtscanstatus" id="vtscanfilelink"></div>
+      </div>
+      <div class="vttextpopup vthidden" id="widgettext">
+        <div id="vtwidgetError"></div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="vt-augment-container" class="vtzindex vt-augment drawer" style="background: rgb(49, 61, 90);"></div></div><span class="vttooltiptext vthidden">&nbsp;Click to open VirusTotal report&nbsp;<br>with VT Augment</span><style></style><div id="janus-extension-installed" style="display: none;"></div></body></html>
