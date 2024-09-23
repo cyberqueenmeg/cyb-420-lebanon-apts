@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
     <head>
@@ -12,8 +13,7 @@
             <img src="Lebanon-Logo.png" alt="Lebanon Logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="chart.html">Chart</a></li>
-                <li><a href="cyberHierarchy.html">Cyber Hierarchy</a></li>>
+                <li><a href="chart.html">Cyber Hierarchy</a></li>
                 <li><a href="missionStatement.html">Mission Statement</a></li>
                 <li><a href="operatives.html">Operatives</a></li>
                 <li><a href="resources.html">Resources</a></li>
@@ -21,9 +21,63 @@
         </div>
 
         <!-- Chart Page Content -->
-        <div>
-            <h1>Charts</h1>
-            <p>PUT CONTENT HERE</p>
+        <div style="margin-left: 30px; margin-right: 30px;">
+            <img src "LB Hierarchy.jpg">
+            <h1>Cybersecurity Hierarchy</h1>
+            <p>Microsoft, as well as other organizations post information about tracked Lebanon <strong> Advanced Persistent Threats</strong>. Below are the <strong>APTs</strong> and their <strong>Tactics</strong>, <strong>Techniques</strong>, and <strong>Procedures</strong>. </p>
+        </div>
+        <div style="margin-left: 30px; margin-right: 30px;">
+            <br>
+            <h1>Polonium-Plaid Rain</h1>
+            <p>This Group is believed to have been active since September 2021. MSTIC (Microsoft Threat Intelligence) states that they are highly confident this group is based in Lebanon. While Polonium has not been given an official APT number, this group is still big enough to be being tracked by multiple threat intelligence teams for its activities. MSTIC also states that they are moderate confidence that Polonium coordinates operations with multiple tracked Iranian Threat Actors based on victimm overlap, as well as common attack vectors and tools.  </p>
+            <h2>Targets</h2>
+            <p>Poloniums targets include many different organizations within Israel.</p>
+            <h2>Attack Vectors (Arghire, 2023)</h2>
+            <ul>
+                <li><strong>CreepyDrive</strong>-Powershell Backdoor - supports Command Execution</li>
+                <li><strong>CreepySnail</strong>-Powershell Backdoor - supports Command Execution</li>
+                <li><strong>DeepCreep</strong>-C# Backdoor - can retrieve commands from text files on Dropbox - can upload/download files to/from the cloud service - achieves persistance by placing a shortcut file in the Startup folder and by creating a scheduled task </li>
+                <li><strong>MegaCreep</strong>-Retrieves commands from text files stored in Mega cloud storage - appears to be newer version of DeepCreep, reusing some of its code</li>
+                <li><strong>FlipCreep</strong>-C# Backdoor that reads commands from a text file on an FTP server</li>
+                <li><strong>TechnoCreep</strong>-Relies on TCP sockets for C&C communication</li>
+                <li><strong>PapaCreep</strong>-C++ Backdoor that uses different components to read commands from a file, to communicate with the C&C server, to upload files to the C&C server, and to download files from the server</li>
+            </ul>
+            <br>
+            <h1>Volatile Cedar-Lebanese Cedar-Caterpillar-Explosive RAT Group</h1>
+            <p>Volatile Cedar is a Lebanese cyber-espionage group active since 2012, targeting individuals, companies, and institutions worldwide. The group's activities are driven by political and ideological objectives, aligning with broader regional agendas.</p>
+            <h2>Targets</h2>
+            <p>Defense Contractors, Media Companies, Telecomunications Organizations, and Educational Institutions in Israel, US, UK, Lebanon, and Egypt. </p>
+            <h2>Attack Vectors (Volatile CeDAr, Lebanese Cedar, Group G0123 | MITRE ATT&CK®, n.d.)</h2>
+            <ul>
+                <li><strong>Active Scanning: Vulnerability scanning</strong>-Scans of target server</li>
+                <li><strong>Active Scanning: Wordlist Scanning</strong>-used DirBuster and GoBuster to bruteforce web directories and DNS subdomains</li>
+                <li><strong>Exploit Public-Facing Application</strong>-targeted publicly facing web servers, with both automatic and manual vulnerability discovery.</li>
+                <li><strong>Ingress Tool Transfer</strong>-can deploy additional tools.</li>
+                <li><strong>Server Software Component: Web Shell</strong>-an inject web shell code into a server.</li>
+            </ul>
+            <br>
+            <h1>Dark Caracal-BlackOasis-ZooPark-LGSD</h1>
+            <p>Dark Caracal is a threat group linked to the Lebanese General Directorate of General Security (GDGS) and has been active since at least 2012. The group is involved in cyber-espionage campaigns targeting a range of global victims, often focusing on government and military sectors.</p>
+            <h2>Targets</h2>
+            <p>Military Personnel, Activists, Government Officials, IT Institutions, Defense Contractors, Healthcare- Germany, France, Middle Eastern Countries.</p>
+            <h2>Attack Vectors (Dark Caracal, Group G0070 | MITRE ATT&CK®, n.d.)</h2>
+            <ul>
+                <li><strong>Application Layer Protocol: Web Protocols</strong>-Dark Caracal's version of Bandook communicates with their server over a TCP port using HTTP payloads Base64 encoded and suffixed with the string "&&&".</li>
+                <li><strong>Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder</strong>-adds a registry key to HKEY_USERS\Software\Microsoft\Windows\CurrentVersion\Run for persistence</li>
+                <li><strong>Command and Scripting Interpreter: Windows Command Shell</strong></li>
+                <li><strong>Data from Local System</strong>-Collected data from files</li>
+                <li><strong>Drive-by Compromise</strong></li>
+                <li><strong>File and Directory Discovery</strong></li>
+                <li><strong>Obfuscated Files or Information: Software Packing</strong></li>
+                <li><strong>Obfuscated Files or Information: Encrypted/Encoded File</strong></li>
+                <li><strong>Phishing: Spearphishing via Service</strong></li>
+                <li><strong>Screen Capture</strong>-using Malware</li>
+                <li><strong>System Binary Proxy Execution: Compiled HTML File</strong></li>
+                <li><strong>User Execution: Malicious File</strong>-makes their malware look like Flash Player, Office, or PDF documents in order to entice a user to click on it</li>
+                <li><strong>Application Layer Protocol: Web Protocols</strong>-implants using standard HTTP communication</li>
+            </ul>
         </div>
     </body>
 </html>
+
+
