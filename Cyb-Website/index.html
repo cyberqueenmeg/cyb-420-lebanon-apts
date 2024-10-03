@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lebanon Cyber Warfare Branch</title>
-    <meta name="description" content="Introduction to Lebanon's Cyberwarfare Branch">
-    <meta name="keywords" content="cyberwarfare, Lebanon, cybersecurity">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -14,9 +16,33 @@
         <img src="Lebanon-Logo.png" alt="Lebanon Logo">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="chart.html">Cyber Hierarchy</a></li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cyber Hierarchy</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="chart.html">Chart</a>
+                        <a class="dropdown-item" href="personnel1.html">Personnel 1</a>
+                        <a class="dropdown-item" href="personnel2.html">Personnel 2</a>
+                        <a class="dropdown-item" href="personnel3.html">Personnel 3</a>
+                        <a class="dropdown-item" href="personnel4.html">Personnel 4</a>
+                        <a class="dropdown-item" href="personnel5.html">Personnel 5</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="missionStatement.html">Mission Statement</a></li>
             <li><a href="operatives.html">Operatives</a></li>
+            <li>
+                <div class="btn-group">
+                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Doctrine
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="nationsDoctrine.html">Nations Doctrine</a>
+                        <a class="dropdown-item" href="natoEuDoctrine.html">NATO-EU Doctrine</a>
+                        <a class="dropdown-item" href="usDoctrine.html">US Doctrine</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="resources.html">Resources</a></li>
         </ul>
     </div>
@@ -24,28 +50,42 @@
     <!-- Page Content -->
     <div class="content" style="margin-left: 100px; margin-right: 100px;font-size: medium;">
         <h1 style="text-align: center;">Welcome to the Cyber Warfare Branch of Lebanon</h1>
-
         <img src="Intelligence.png" alt="Intelligence and Security Agency Emblem" class="emblem" style="width: 150px; height: auto; display: block; margin: auto;">
-
         <p>
             As the head of Lebanon's Cyber Warfare Branch, I am proud to introduce our mission and capabilities. Our dedicated team works tirelessly to protect our nation's cyber infrastructure from evolving threats and to ensure our digital sovereignty.
         </p>
-        
         <p>
             Cyber Warfare is a vital aspect of modern defense strategies. Our branch is equipped with cutting-edge technology and skilled professionals committed to safeguarding Lebanon's interests in the digital realm.
         </p>
-
         <p>
             Together, we strive to enhance our cyber capabilities and collaborate with international partners to address shared challenges and protect our cyber landscape.
         </p>
-
         <p>
             Sincerely,<br>
             Elias Baysari, Major-General<br>
             General Director of the General Directorate of General Security, Lebanon
+        
+            <img src="Elias Baysari, Major-General.png" alt="Head of Cyber Warfare Branch" class="leader-photo" style="width: 150px; height: auto; display: block; margin: auto;">
         </p>
-
-        <img src="Elias Baysari, Major-General.png" alt="Head of Cyberwarfare Branch" class="leader-photo" style="width: 150px; height: auto; display: block; margin: auto;">
     </div>
+
+    <!-- JavaScript for Dropdown Behavior -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButton = document.querySelector(".btn-group .btn");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+
+            dropdownButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                dropdownMenu.classList.toggle("show");
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
