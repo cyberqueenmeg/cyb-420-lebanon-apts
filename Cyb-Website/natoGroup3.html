@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li></li>
                 <div class="btn-group">
                     <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Honors Addendums</button>
                     <div class="dropdown-menu">
@@ -76,55 +76,37 @@
             <li><a href="resources.html">Resources</a></li>
         </ul>
     </div>
-    
+       
     <!-- Page Content -->
-    <div style="margin-left: 100px; margin-right: 100px; font-size: medium;">
-        <h1 style="text-align: center;">Unit 8200 (IDF's Signal Intelligence Unit)</h1>
-        
-        <h2>Personnel</h2>
-        <div style="display: flex; align-items: center;">
-            <img src="file-yVpGwNSl2Zoy6tRuJMMF1XuD" alt="David Barnea" style="width: 150px; height: auto; margin-right: 20px;">
-            <p><b>David Barnea</b> (born 1965, age {{current_year - 1965}}) is the current director of Mossad. He holds an MBA from New York University and began his career in Mossad’s <i>Tzomet</i> division, where he focused on agent recruitment and field operations. Over the years, he has risen to leadership positions within Israel’s intelligence community.</p>
-        </div>
-        
-        <h2>Cyber Skills</h2>
-        <p>Unit 8200 is renowned for its expertise in:</p>
-        <ul>
-            <li>Cyber intelligence and communications interception</li>
-            <li>Cyber operations and espionage</li>
-            <li>Signal and data analysis</li>
-            <li>Technological innovation, with many veterans joining Israel's tech industry</li>
-        </ul>
-        
-        <h2>Known Individuals</h2>
-        <p>Leadership within Unit 8200 and Israeli intelligence is highly vetted, with a background in military intelligence. <b>David Barnea</b> has served in various intelligence roles, though specific details remain classified.</p>
-        
-        <h2>Attack</h2>
-        <p>Unit 8200 has been linked to various cyber intelligence activities. While specifics on individual attacks remain classified, the unit is known for its technological capabilities and has contributed to Israel's defense against regional threats.</p>
-        
-        <h2>Detect and Track</h2>
-        <p>Monitoring Unit 8200’s activities often involves analyzing known signal interception techniques and employing advanced cybersecurity measures to protect communications from interception.</p>
+    <div style="margin-left: 100px; margin-right: 100px;font-size: medium;">
+        <h1 style = "text-align: center;"> PUT NATO GROUP HERE </h1>
+        <h2> Personnel </h2>
+        <p> content here </p>
+        <h2> Cyber Skills </h2>
+        <p> content here </p>
+        <h2> Attack </h2>
+        <p> content here </p>
+        <h2> Detect and Track </h2>
+        <p> content here </p>
     </div>
-    
+
     <!-- JavaScript for Dropdown Behavior -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const dropdownButtons = document.querySelectorAll(".btn-group .btn");
-            
-            dropdownButtons.forEach(button => {
-                button.addEventListener("click", function (event) {
-                    event.stopPropagation();
-                    this.nextElementSibling.classList.toggle("show");
-                });
+            const dropdownButton = document.querySelector(".btn-group .btn");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+
+            dropdownButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                dropdownMenu.classList.toggle("show");
             });
-            
-            document.addEventListener("click", function () {
-                document.querySelectorAll(".dropdown-menu").forEach(menu => {
-                    menu.classList.remove("show");
-                });
+
+            document.addEventListener("click", function (event) {
+                if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
             });
         });
     </script>
 </body>
 </html>
-
