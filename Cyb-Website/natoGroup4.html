@@ -74,24 +74,50 @@
             <li><a href="resources.html">Resources</a></li>
         </ul>
     </div>
-
+    
     <!-- Page Content -->
-    <div style="margin-left: 100px; margin-right: 100px;font-size: medium;">
+    <div style="margin: 100px; font-size: medium;">
         <h1 style="text-align: center;">APT44 (Sandworm) – Russia</h1>
-        <h2>Aliases</h2>
-        <p>Voodoo Bear</p>
 
-        <h2>Cyber Skills</h2>
-        <p>Industrial sabotage, destructive malware, infrastructure targeting, reconnaissance.</p>
+        <h2>Aliases</h2>
+        <p>Voodoo Bear, Telebots, BlackEnergy Group</p>
+
+        <h2>Overview</h2>
+        <p>APT44, also known as Sandworm, is a Russian cyber threat group linked to GRU military intelligence. It is known for highly disruptive attacks on critical infrastructure, including power grids, water systems, and transportation networks. Sandworm operates at the intersection of cyber espionage, sabotage, and warfare, often in alignment with Russia’s geopolitical interests.</p>
+
+        <h2>Key Skills and Operations</h2>
+        <ul>
+            <li><strong>Industrial Sabotage:</strong> Targets SCADA and ICS systems used in energy and utility infrastructure.</li>
+            <li><strong>Destructive Malware:</strong> Deployed NotPetya and Industroyer malware to disable operations and inflict economic damage.</li>
+            <li><strong>Infrastructure Targeting:</strong> Focuses on energy, public health, and transportation sectors.</li>
+            <li><strong>Reconnaissance:</strong> Collects sensitive data and creates backdoors for future attacks.</li>
+            <li><strong>Supply Chain Attacks:</strong> Uses third-party software to infiltrate systems (e.g., NotPetya's use of compromised accounting software).</li>
+        </ul>
 
         <h2>Notable Attacks</h2>
-        <p>Disrupted power and water infrastructure in Ukraine (2024); attacked water treatment facilities in the U.S. and EU.</p>
+        <ul>
+            <li><strong>Ukraine Power Grid Attacks (2015-2024):</strong> Multiple attacks on Ukraine’s energy sector, leaving thousands without power and aligning with Russian military operations.</li>
+            <li><strong>NotPetya Attack (2017):</strong> Began in Ukraine and spread globally, costing companies like Maersk and FedEx billions. It remains one of the most destructive malware attacks.</li>
+            <li><strong>Water Facilities Attacks (2024):</strong> Exploited vulnerabilities in U.S. and EU water systems, disrupting water supplies in key regions.</li>
+        </ul>
 
-        <h2>Detect and Track</h2>
-        <p>Implement industrial network monitoring systems (e.g., SCADA alerts); coordinate with governmental CERTs.</p>
+        <h2>Detection and Tracking</h2>
+        <ul>
+            <li><strong>SCADA/ICS Monitoring:</strong> Use specialized tools (e.g., Nozomi Networks, Dragos) to detect unusual activity in industrial networks.</li>
+            <li><strong>Threat Intelligence Coordination:</strong> Collaborate with governmental CERTs (e.g., US-CERT) to share real-time alerts and indicators of compromise (IOCs).</li>
+        </ul>
 
-        <h2>Plan</h2>
-        <p>Deploy deception technologies (honeypots) in critical networks to gather intelligence on threat actor tactics.</p>
+        <h2>Proactive Defense Measures</h2>
+        <ul>
+            <li><strong>Deploy Honeypots:</strong> Lure attackers to decoy systems to gather intelligence on their tactics.</li>
+            <li><strong>Monitor Supply Chain:</strong> Assess third-party vendors to prevent supply chain breaches.</li>
+            <li><strong>Deception Technologies:</strong> Use fake credentials and false networks to mislead attackers.</li>
+            <li><strong>Behavioral Analytics:</strong> Implement tools to flag abnormal behavior within networks.</li>
+            <li><strong>Network Segmentation:</strong> Isolate critical systems to contain potential breaches.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>APT44 (Sandworm) remains a significant threat to critical infrastructure worldwide. Their focus on energy grids and public utilities underscores the need for enhanced monitoring, intelligence sharing, and proactive defenses to protect vital systems. Strengthening cyber defenses through public-private collaboration is essential to mitigating future attacks.</p>
     </div>
 
     <!-- JavaScript for Dropdown Behavior -->
