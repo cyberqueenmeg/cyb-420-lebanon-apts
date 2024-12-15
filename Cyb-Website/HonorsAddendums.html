@@ -9,96 +9,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <!-- Navigation Bar -->
     <div class="navbar">
         <img src="Lebanon-Logo.png" alt="Lebanon Logo">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Site Map</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="chart.html">Chart</a>
-                        <a class="dropdown-item" href="Joseph-Aoun.html">Joseph Aoun</a>
-                        <a class="dropdown-item" href="Elias-Baysari.html">Elias Baysari</a>
-                        <a class="dropdown-item" href="Lina-Oueidat.html">Lina Oueidat</a>
-                        <a class="dropdown-item" href="Mahmoud-al-Asmar.html">Mahmoud al-Asmar</a>
-                        <a class="dropdown-item" href="Toni-Mansour.html">Toni Mansour</a>
-                    </div>
-                </div>
-            </li>
+            <li><a href="siteMap.html">Site Map</a></li>
             <li><a href="executiveSummary.html">Executive Summary</a></li>
-            <li><a href="missionStatement.html">Mission Statement</a></li>
-            <li><a href="operatives.html">Part 1: Nation-State Infrastructure</a></li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Part 2: Doctrine and Stakeholders</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="nationsDoctrine.html">Nations Doctrine</a>
-                        <a class="dropdown-item" href="natoEuDoctrine.html">NATO-EU Doctrine</a>
-                        <a class="dropdown-item" href="usDoctrine.html">US Doctrine</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Part 3: Operational Plans</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="powerGridAttack.html">Power Grid Attack</a>
-                        <a class="dropdown-item" href="AviationAttack.html">Aviation Attack</a>
-                        <a class="dropdown-item" href="operation3.html">Financial Attack</a>
-                        <a class="dropdown-item" href="operation4.html">Transportation Attack</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Part 4: Threat Assessment</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="natoGroupUK.html">UK Cyber Force</a>
-                        <a class="dropdown-item" href="natoGroupUS.html">USCYBERCOM</a>
-                        <a class="dropdown-item" href="natoGroupIsrael.html">Unit 8200</a>
-                        <a class="dropdown-item" href="natoGroup4.html">APT 28</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Part 5: Planning and Deployment</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="challenge1.html">Challenge 1</a>
-                        <a class="dropdown-item" href="challenge2.html">Challenge 2</a>
-                        <a class="dropdown-item" href="challenge3.html">Challenge 3</a>
-                        <a class="dropdown-item" href="challenge4.html">Challenge 4</a>
-                    </div>
-                </div>
-            </li>
+            <li><a href="cyberMission.html">Cyber Mission Page</a></li>
+            <li><a href="part1.html">Part 1</a></li>
+            <li><a href="part2.html">Part 2</a></li>
+            <li><a href="part3.html">Part 3</a></li>
+            <li><a href="part4.html">Part 4</a></li>
+            <li><a href="part5.html">Part 5</a></li>
             <li><a href="riskEvaluation.html">Risk Evaluation</a></li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Training</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="training1.html">Penetration Testing</a>
-                        <a class="dropdown-item" href="training2.html">Training 2</a>
-                        <a class="dropdown-item" href="training3.html">Training 3</a>
-                        <a class="dropdown-item" href="training4.html">Training 4</a>
-                        <a class="dropdown-item" href="training5.html">Training 5</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="btn-group">
-                    <button type="button" class="btn custom-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Honors Addendums</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="HonorsAddendum1.html">Honors Addendum #1</a>
-                    </div>
-                </div>
-            </li>
+            <li><a href="training.html">Training Page</a></li>
+            <li><a href="HonorsAddendums.html">Honors Addendums</a></li>
             <li><a href="resources.html">Resources</a></li>
         </ul>
     </div>
+</head>
+<body>
 
   <!-- Page Content -->
   <div style="margin-left: 100px; margin-right: 100px;font-size: medium;">
@@ -106,6 +36,12 @@
     <br>
     <br>
     <style>
+        .navbar {
+            background-color: #333;
+            display: flex;
+            align-items: center; 
+            overflow: visible; 
+        }
         body {
             font-family: 'Times New Roman', Times, serif;
             line-height: 2;
@@ -147,7 +83,6 @@
 </head>
 <body>
     <section>
-        <h1>Honors Addendum #1 (Honors Addendum #2 is below on the same page) </h1>
         <h2><strong>The Law of War</strong></h2>
         <p style="text-indent: 0; text-align: center;">Megan G. Howell<br>
            College of Engineering & Technology & The Honors College, Grand Canyon University<br>
@@ -200,27 +135,48 @@
         <p class="references">Sassòli, M. (2019). Autonomous weapons and international humanitarian law: Advantages, open technical questions and legal issues to be clarified. <em>International Law Studies, 90</em>(1), 308-340. <a href="https://digital-commons.usnwc.edu/ils/vol90/iss1/1/">https://digital-commons.usnwc.edu/ils/vol90/iss1/1/</a></p>
         <p class="references">Schmitt, M. N., & Schauss, M. (2019). Uncertainty in the law of targeting: Towards a cognitive framework. <em>Harvard National Security Journal, 10</em>(1), 148-194. <a href="https://centaur.reading.ac.uk/89619/1/Uncertainty%20HNSJ.pdf">https://centaur.reading.ac.uk/89619/1/Uncertainty%20HNSJ.pdf</a></p>
     </section>
-
+    <br>
+    <br>
+    <h1 style = "text-align: center; font-family: 'Times New Roman', Times, serif;"> Honors Addendum #2 </h1>
     <section>
-        <h1>Honors Addendum #2</h1>
         <h2><strong>Cyberwarfare Strategy Plan</strong></h2>
         <p style="text-indent: 0; text-align: center;">Megan G. Howell<br>
            College of Engineering & Technology & The Honors College, Grand Canyon University<br>
            CYB-420HN: Global Perspectives on Cyber Warfare<br>
            Dr. Christine Bakke<br>
-           November 10, 2024</p>
+           December 15, 2024</p>
     </section>
     <section>
-        <p>In addition to completing the assignment according to the instructions within the syllabus, address the following: The "New Your Times - Pentagon Suggests Countering Devastating Cyberattacks With Nuclear 
-            3Arms" article suggests that the Pentagon indicated they may choose to respond to a devastating cyberattack with nuclear weapons. Is the use of kinitic weapons a proportional response to cyber attacks? Explain your rationale in-depth, making sure to include details and examples.This assignment requires the use of at least four additional scholarly research sources published within the last 5 years. Include at least two in-text citations from each cited source.Prepare this assignment according to the guidelines found in the APA Style Guide, located in the Student Success Center. An abstract is required</p>
+        <h3>Abstract</h3>
+        <p>The piece at hand investigates whether using kinetic weapons in response to cyberattacks is appropriate. The appropriateness of kinetic military operations has become a hotly debated topic as cyber threats increasingly target key infrastructure. In addition to discussing expert viewpoints on the risks and efficacy of using kinetic force in response to cyber provocations, this paper assesses the consequences of kinetic reactions in respect to international law, namely the principle of proportionality. This research evaluates the appropriateness of using kinetic weapons as a defense against cyberattacks by consulting historical antecedents, contemporary military doctrines, and legal frameworks.</p>
+        <p class="keywords">Keywords: kinetic weapons, cyber attacks, proportionality, military response, international law</p>
+    </section>
+    <section>
+        <p>The appropriateness of kinetic weapons as an appropriate response to cyberattacks is a complex and nuanced matter. Kinetic weapons are often viewed as a more severe form of vengeance than cyber warfare, which might have unpredictable or reversible outcomes (Sanger & Broad, 2018; Brooking & Lonergan, 2023). The proportionality principle of international law states that any armed response must be appropriate for the damage inflicted. This raises concerns about the justification of kinetic responses to cyberattacks (Vavra, 2019; Carlini, 2019).</p>
+    </section>
+    <section>
+        <p>Many factors need to be considered in this discussion. First, there are many different kinds of damage that can be caused by cyberattacks. Some cyberattacks may cause serious physical harm or even death, while others may only cause temporary service outages with no lasting effects (Brooking & Lonergan, 2023; Vavra, 2019). When kinetic warfare is considered, proportionality assessments become increasingly complex. According to Sanger and Broad (2018), "The Pentagon's new strategy suggests that significant non-nuclear attacks could include attacks on civilian populations or infrastructure," emphasizing the significance of careful analysis when deciding the best course of action to take.</p>
+    </section>
+    <section>
+        <p>Second, the conflict is likely to become more violent in the future. Experts warn that utilizing physical weapons, such as nuclear bombs, in response to cyberattacks could exacerbate existing issues (Carlini, 2019; Brooking & Lonergan, 2023). Given the potential for vengeance operations to trigger new violent conflicts, state actors play an especially crucial role. "The inevitability of bombs falling in response to a cyberattack raises questions about the thresholds for using force," as Vavra (2019) points out, making it impossible to foresee results when shifting from cyber to kinetic responses.</p>
+    </section>
+    <section>
+        <p>Furthermore, the laws that regulate war provide critical standards for determining the proportionality of military operations.Any use of force must be appropriate for the threat and mandated by international humanitarian law (Fenton, 2019; Carlini, 2019). The difficult component is adapting this to the unique characteristics of cyberwarfare, as "the complexities associated with applying the law of proportionality... will leave civilian populations vulnerable" (Brooking & Lonergan, 2023).</p>
+    </section>
+    <section>
+        <p>In conclusion, while kinetic weapons may provide an effective response to cyberattacks, their usage poses substantial ethical and legal questions about proportionality and escalation dangers. The complexity of modern warfare, both cyber and nuclear, require a comprehensive approach that considers both immediate and long-term effects for international stability. Furthermore, developing realistic responses to the evolving range of cyberthreats requires continual cooperation between military strategists and policymakers in order to avoid utter nuclear calamity.</p>
     </section>
 
     <section>
         <h4>References</h4>
+        <p class="references">Brooking, E. T., & Lonergan, E. D. (2023, September 25). Welcome to cyber realism: Parsing the 2023 Department of Defense Cyber Strategy. War on the Rocks. https://warontherocks.com/2023/09/welcome-to-cyber-realism-parsing-the-2023-department-of-defense-cyber-strategy/</p>
+        <p class="references">Carlini, G. (2019). Israeli attack against Hamas cyber headquarters in Gaza (2019) - International cyber law: interactive toolkit. Cyberlaw.ccdcoe.org. https://cyberlaw.ccdcoe.org/wiki/Israeli_attack_against_Hamas_cyber_headquarters_in_Gaza_(2019)</p>
+        <p class="references">Fenton, H. A. (2019). Proportionality and its applicability in the realm of cyber attacks. Duke University School of Law. https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1544&context=djcil</p>
+        <p class="references">Sanger, D. E., & Broad, W. J. (2018, January 16). Pentagon suggests countering devastating cyberattacks with nuclear arms. The New York Times. https://www.nytimes.com/2018/01/16/us/politics/pentagon-nuclear-review-cyberattack-trump.html</p>
+        <p class="references">Vavra, S. (2019, May 6). It was “inevitable” that bombs would fall in response to a cyberattack. CyberScoop. https://cyberscoop.com/hamas-cyberattack-israel-air-strikes/</p>
     </section>
     
 </body>
-</html>
 
 </div>
 
@@ -242,5 +198,5 @@
         });
     });
 </script>
-</body>
+
 </html>   

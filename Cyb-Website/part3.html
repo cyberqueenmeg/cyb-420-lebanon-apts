@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebanon Cyber Warfare Branch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="navbar">
+        <img src="Lebanon-Logo.png" alt="Lebanon Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="executiveSummary.html">Executive Summary</a></li>
+            <li><a href="cyberMission.html">Cyber Mission Page</a></li>
+            <li><a href="part1.html">Part 1</a></li>
+            <li><a href="part2.html">Part 2</a></li>
+            <li><a href="part3.html">Part 3</a></li>
+            <li><a href="part4.html">Part 4</a></li>
+            <li><a href="part5.html">Part 5</a></li>
+            <li><a href="riskEvaluation.html">Risk Evaluation</a></li>
+            <li><a href="training.html">Training Page</a></li>
+            <li><a href="HonorsAddendums.html">Honors Addendums</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </div>
+</head>
+<body>
+    <h1>Part 3 - Operational Plans</h1>
+    <div style="margin-left: 100px; margin-right: 100px;font-size: medium;">
+        <h2 style = "text-align: center;"> <strong>Operation 1 - Power Grid Attack</strong> </h2>
+        <br>
+        <br>
+        <h3> <strong>Offensive Cyber Operation</strong> </h3>
+        <p>A cyber attack targeting a nation-state’s power grid infrastructure, aiming to cause widespread outages, disrupt daily life, and undermine trust in the government.</p>
+        <br>
+        <h4><strong>Tools/Weapons</strong></h4>
+        <ul>
+            <li><strong>SCADA Malware</strong>: Malware designed to target SCADA systems, which control power grids.</li>
+            <li><strong>DDoS</strong>: Overwhelms network resources to disrupt communication between grid control systems.</li>
+            <li><strong>Ransomware</strong>: Used to encrypt key control systems, halting operations and demanding payment.</li>
+        </ul>
+        <br>
+        <p><strong>SCADA Malware</strong></p>
+        <ul> 
+            <li><strong>Tool</strong>:SCADA malware is designed to exploit vulnerabilities in industrial control systems (ICS) that manage power grids. These systems are used to control physical infrastructure like electrical grids.</li>
+            <li><strong>Technique</strong>:The malware can alter control signals within the SCADA system, causing malfunctions, disrupting energy distribution, or even shutting down entire sectors of the grid.</li>
+            <li><strong>Technology</strong>:Attackers may use advanced exploits such as zero-day vulnerabilities targeting SCADA devices, programmable logic controllers, and human-machine interfaces.</li>
+            <li><strong>Data</strong>:This malware often collects sensitive operational data and can lead to a cascading failure in power systems if it infects critical grid components.</li>
+        </ul>
+         <br>
+        <p><strong>DDoS</strong></p>
+        <ul> 
+            <li><strong>Tool</strong>:DDoS attacks overwhelm the network traffic by flooding grid control systems with excessive requests, making communication and operations sluggish or completely unresponsive.</li>
+            <li><strong>Technique</strong>:By leveraging botnets or other automated tools, attackers generate massive amounts of traffic to exhaust the bandwidth or computational resources of control systems.</li>
+            <li><strong>Technology</strong>:The use of IoT devices, cloud computing infrastructure, and distributed botnets enables attackers to amplify the DDoS attack, overwhelming even robust systems.</li>
+            <li><strong>Data</strong>:DDoS attacks disrupt data flow, effectively paralyzing critical communication between grid control centers and remote infrastructure.</li>
+        </ul>
+        <br>
+        <p><strong>Ransomware</strong></p>
+        <ul> 
+            <li><strong>Tool</strong>:Ransomware encrypts critical control systems and demands a ransom for the decryption key. If the ransom is not paid, the attackers may leave the power grid system disabled.</li>
+            <li><strong>Technique</strong>:Attackers exploit weaknesses in system software to deploy ransomware, locking key control files or systems.</li>
+            <li><strong>Technology</strong>:Encryption algorithms are used to render systems inoperable, and cryptocurrency is often used as the payment mechanism for anonymity.</li>
+            <li><strong>Data</strong>:Critical control data is encrypted, meaning that operators cannot manage or access systems without paying the ransom or restoring backups.</li>
+        </ul>
+        <br>
+        <br>
+         <h3>Offensive Legal Considerations</h3>
+        <br>
+        <h4><strong>Legal USA</strong></h4>
+        <br>
+        <p>(Presidential Policy Directive -- Critical Infrastructure Security And, 2013)<strong>Presidential Policy Directive</strong>:PPD-21 outlines the U.S. government’s policy on Critical Infrastructure Security and Resilience, with the aim of ensuring the safety and security of critical infrastructure such as energy grids. Under this directive, power grids are categorized as part of the energy sector, making their protection a high priority.</p>
+        <p>A cyber-attack targeting the power grid could be viewed as an act of war or terrorism, invoking military responses under the War Powers Resolution if the attack is state-sponsored.</p>
+        <br>
+        <h4><strong>Legal NATO</strong></h4>
+        <br>
+        <p>(Nato, n.d.)<strong>NATO Cyber Defence Policy</strong>:In 2014, NATO endorsed its Enhanced Cyber Defence Policy, recognizing cyberspace as a domain of operations. Under this policy, member states are required to protect their own critical infrastructure and develop capabilities for defending against cyber-attacks.</p>
+        <p>NATO’s collective defense commitment implies that a significant cyber-attack on a member nation’s critical infrastructure could lead to collective defense measures, including cyber counter-attacks or even physical military intervention.</p>
+        <br>
+        <br>
+        <h3><strong>Defensive Cyber Operations</strong></h3>
+        <br>
+        <h4><strong>Tools/Weapons</strong></h4>
+        <ul>
+            <li><strong>Network Segmentation</strong>: Separates critical infrastructure systems from public-facing systems to minimize exposure to attacks.</li>
+            <li><strong>Redundant Systems</strong>: Backup systems that can restore functionality in the event of a grid failure.</li>
+            <li><strong>SCADA Security Monitoring</strong>: Monitors SCADA systems for abnormal activity, allowing for early detection of malicious interference.</li>
+        </ul>
+        <br>
+        <p><strong>Network Segmentation</strong></p>
+        <ul> 
+            <li><strong>Tool</strong>:Network segmentation divides the network into smaller, isolated segments. Critical systems, such as those controlling the power grid, are separated from public-facing or less critical systems, reducing the exposure of sensitive infrastructure to external threats.</li>
+            <li><strong>Technique</strong>:By creating distinct zones for operational technology like SCADA systems and informational technology systems, segmentation limits an attacker's lateral movement. If a breach occurs in a less sensitive segment, it will not easily spread to critical infrastructure.</li>
+            <li><strong>Technology</strong>:Tools like virtual local area networks, firewalls, and access control lists are used to enforce segmentation policies, ensuring that each network segment has specific security controls and monitoring.</li>
+            <li><strong>Data</strong>:Network traffic within each segment is monitored and analyzed separately, allowing for better identification of unusual patterns or unauthorized access attempts in critical systems.</li>
+        </ul>
+        <br>
+        <p><strong>Redundant Systems</strong></p>
+        <ul> 
+            <li><strong>Tool</strong>:Redundant systems ensure that essential functions continue even if primary systems fail. This typically includes backup servers, secondary data centers, or power generation systems.</li>
+            <li><strong>Technique</strong>:By maintaining operational backups and failover mechanisms, redundancy ensures that critical services remain available during a cyber-attack or hardware failure.</li>
+            <li><strong>Technology</strong>:Automated failover systems and data replication are used to create real-time backups of critical system configurations and data. If an attack disables a key part of the grid, redundant systems kick in to maintain service.</li>
+            <li><strong>Data</strong>:Data integrity is ensured by storing backup copies in secure locations, often geographically distributed, to protect against both physical and cyber threats. These backups can be used to quickly restore operations after an attack.</li>
+        </ul>
+        <br>
+        <p><strong>SCADA Security Monitoring</strong></p>
+        <ul> 
+            <li><strong>Tool</strong>:SCADA monitoring tools are designed to keep a watchful eye on SCADA systems, identifying abnormal patterns or signs of cyber intrusion that may indicate a compromise.</li>
+            <li><strong>Technique</strong>:Monitoring tools analyze traffic between SCADA components and detect anomalies that could suggest malware, unauthorized commands, or unusual operational behavior.</li>
+            <li><strong>Technology</strong>:Specialized intrusion detection systems for SCADA networks, such as Nozomi Networks or Claroty, continuously monitor the flow of data and control signals, alerting administrators to potential threats.</li>
+            <li><strong>Data</strong>:SCADA security tools analyze logs, system states, and communication flows. They compare this data to established baselines, helping detect suspicious activities early and triggering alerts for manual or automated response.</li>
+        </ul>
+        <br>
+        <br>
+        <h3><strong>Defensive Legal Considerations</strong></h3>
+        <br>
+        <h4><strong>Legal EU</strong></h4>
+        <br>
+        <p>(General Data Protection Regulation (GDPR) – Legal Text, 2024)<strong>General Data Protection Regulation</strong>:If a cyber-attack targeting a power grid involves the compromise of personal data, GDPR’s stringent data protection laws may apply, requiring notifications of breaches and significant fines for non-compliance.</p>
+        <br>
+        <p>(EU Cybersecurity Act | IT Governance Ltd, n.d.)<strong>The EU Cybersecurity Act</strong>:The Cybersecurity Act, introduced in 2019, enhances the role of the European Union Agency for Cybersecurity (ENISA) and establishes a European cybersecurity certification framework to ensure that infrastructure, including power grids, meets certain security standards.</p>
+        <p>Under this act, attacks on infrastructure that fail to meet certification standards can lead to regulatory scrutiny and sanctions.</p>
+    </div>
+    <div style="margin-left: 100px; margin-right: 100px;font-size: medium;">
+        <h2 style = "text-align: center;"> Operation 2 - Supply Chain Attack on Israel's Aviation Force</h2>
+        <br>
+        <h3>Operation Context: Description and Use of Technology</h3>
+        <p>In 2022, the Lebanese APT Polonium used a cloud services provider "to target a downstream aviation company and law firm in a supply chain attack.” (Vicens, 2022). </p>
+        <p>They utilized Microsoft OneDrive accounts to help run this attack and gain access to the Israeli aviation force.</p>
+        <p>These accounts were used as command and control stations for malware that targeted Israeli OneDrive and DropBox accounts (Arghire, 2022).</p>
+        <br>
+        <h3>Offensive Approach:</h3>
+        <ol>
+            <li>Microsoft OneDrive: This tool provided Polonium with the infrasturcture for their Command & Control operation against the Israeli aviation industry.</li>
+            <li>Kali Linux: Kali Linux provides many built-in tools to help set up Command & Control infrastructure, social engineering attacks, hacking tools, and more.</li>
+            <li>Metasploit Framework: The Metasploit Framework can be used to set up automatic payloads to exploit cloud services such as Microsoft OneDrive.</li>
+        </ol>
+        <br>
+        <h3>Defensive Approach:</h3>
+        <ol>
+            <li>Firewall: Firewalls help to detect unusal traffic coming into the network, helping to mitigate a potential attack to the infrastructure of the aviation industry.</li>
+            <li>Splunk: This forensics tool helps detect patterns in network traffic and allows analysts to easily search for, find, and analyze suspicious traffic. The usage of Splunk or a similar SIEM could help to detect and thwart a similar attack against Lebanon's aviation industry.</li>
+        </ol>
+        <br>
+        <h3>Legal Issues surrounding Authorized Cyber Operations</h3>
+        <p>When executing authorized offensive or defensive cyber operations, it is critical to understand regulations surrounding international humanitarian law and cyber operations during armed conflicts (International Committee of the Red Cross, n.d.).</p>
+        <p>This includes understanding the potential impact these operations could have on innocent civilians.</p>
+        <p>An attack such as the one described on the aviation industry could lead to many fatalities. For example, if the software controlling an airplane is taken over while it is in the air, the plane could crash and kill the passengers.</p>
+        <p>Other cyber attacks against critical infrastructure could lead to civillians not having access to clean water, power, or food (among other consequences) (International Committee of the Red Cross, n.d.).</p>
+    </div>
+    <!-- Offensive Cyber Strategy Section -->
+    <div style="margin-left: 30px; margin-right: 30px;">
+        <h2 style = "text-align: center;">Operation 3 - Financial Attack</h2>
+        <h3>Offensive Cyber Strategy</h3>
+        
+        <h3>Cyber Espionage Operation Overview</h3>
+        <p>This cyber espionage operation involves Lebanon targeting the financial infrastructure of a neighboring country. The operation aims to infiltrate financial institutions, such as banks and regulatory agencies, to access sensitive economic data, monitor financial transactions, and identify vulnerabilities. This intelligence gathering could support Lebanon in gaining political or economic leverage.</p>
+        
+        <h4>Recommended Cyber Tools/Weapons</h4>
+        <ul>
+            <li><strong>Phishing Toolkit</strong> <br>
+                <em>Purpose:</em> To gain initial access by impersonation and deception through financial employees sharing credentials or clicking malicious links. <br>
+                <em>Explanation:</em> Phishing serves as a base level entry point into a company network through a trusted employee's account.
+            </li>
+            <li><strong>Compromised USB Drive</strong> <br>
+                <em>Purpose:</em> Placed in locations where employees might pick it up and connect it to company devices, potentially installing malware onto the network. <br>
+                <em>Explanation:</em> An infected USB drive introduces malware like a RAT or data-collection tool onto secured networks, especially useful where internet access is restricted.
+            </li>
+        </ul>
+
+        <h4>Legal Issues in Authorized Cyber Operations</h4>
+    
+        <ul>
+            <li><strong>UN Charter on Sovereignty and Non-Intervention:</strong> Emphasizes non-interference between nation-states. Cyber espionage falls would fall under malicious interference.</li>
+            <li><strong>Tallinn Manual on Cyber Warfare:</strong> Although not legally binding, this manual shows interpretations of how international law could apply to cyber conflicts.</li>
+            <li><strong>Budapest Convention on Cybercrime:</strong> This treaty focuses on preventing cybercrime, especially unauthorized access and data interception. While aimed more at individual cybercrime, its guidelines are relevant to unauthorized access and monitoring involved in cyber espionage.</li>
+        </ul>
+
+        <h4>Tools, Techniques, Technology, and Data Use Summary</h4>
+        <ul>
+            <li><strong>Tools:</strong>Phishing Toolkit, Compromised USB Drive.</li>
+            <li><strong>Techniques:</strong> Social engineering (phishing), credential harvesting, data exfiltration, and physical device manipulation.</li>
+            <li><strong>Technology:</strong> Email spoofing, malware persistence, and physical malware introduction.</li>
+            <li><strong>Data:</strong> Financial records, transaction logs, and login credentials.</li>
+        </ul>
+    </div>
+
+    <!-- Defensive Cyber Strategy Section -->
+    <div style="margin-left: 30px; margin-right: 30px;">
+        <h2>Defensive Cyber Strategy</h2>
+
+        <h4>Recommended Defensive Tools and Weapons</h4>
+        <ul>
+            <li><strong>Intrusion Detection and Prevention System</strong> <br>
+                <em>Purpose:</em> Monitors network traffic for suspicious activity and can block potential threats in real-time. <br>
+                <em>Explanation:</em> An IDPS can detect and block unauthorized access attempts, protecting financial systems from phishing and RAT deployment by monitoring for abnormal activity.
+            </li>
+            <li><strong>USB Port Blocking Device</strong> <br>
+                <em>Purpose:</em> Blocks or disables USB ports on workstations to prevent unauthorized USB devices from connecting. <br>
+                <em>Explanation:</em> This physical tool prevents malware on compromised USB drives from accessing network systems, enhancing security against physical infiltration.
+            </li>
+        </ul>
+
+        <h4>Legal Issues in Defensive Cyber Operations</h4>
+            <li><strong> Law No. 81 of October 10, 2018 on Electronic Transactions and Personal Data</strong> This law was enacted to govern electronic transactions and the protection of personal data, establishing data processing requirements, security protocols, and privacy rights for individuals within Lebanon.</li>
+            <li><strong>PCI-DSS:</strong> Widely recognized set of guidelines for protecting cardholder data. While not specific to the country of Lebanon, financial institutions in Lebanon typically adhere to PCI-DSS standards as part of international best practices.</li>
+        </ul>
+
+        <h4>Tools, Techniques, Technology, and Data Use Summary</h4>
+        <ul>
+            <li><strong>Tools:</strong> IDPS, USB Port Blocking Device.</li>
+            <li><strong>Techniques:</strong> Anomaly detection, incident response, and physical access restriction.</li>
+            <li><strong>Technology:</strong> Machine learning for anomaly detection, secure encrypted communication, and automated incident response systems.</li>
+            <li><strong>Data:</strong> Network logs, user activity records, and endpoint monitoring data to identify and respond to suspicious behavior.</li>
+        </ul>
+    </div>
+    <div style="margin-left: 100px; margin-right: 100px; font-size: medium;">
+        <h2 style="text-align: center;">Operation 4 - Transportation Disruption</h2>
+
+        <h3>Overview</h3>
+        <p>A transportation disruption targets critical infrastructure like ports, airports, or railways to cause delays or halt operations. Lebanon, reliant on maritime and ground transport, could suffer if such attacks cripple imports or logistics.</p>
+
+        <h3>Offensive Cyber Strategy</h3>
+        <p><strong>Goal:</strong> Disrupt another nation’s transport systems to delay trade or cripple logistics.</p>
+        <ul>
+            <li><strong>Ransomware:</strong> Encrypt files and demand payment.</li>
+            <li><strong>DDoS Attack:</strong> Overwhelm traffic systems with junk data.</li>
+            <li><strong>Supply Chain Exploit:</strong> Hack third-party software used in transport networks.</li>
+        </ul>
+        <h4>Recommended Offensive Tools</h4>
+        <ul>
+            <li><strong>Ransomware (e.g., LockBit):</strong> Paralyzes transport operations by locking essential files.</li>
+            <li><strong>Botnets:</strong> Flood servers to disrupt services.</li>
+            <li><strong>IoT Exploits:</strong> Compromise traffic sensors or GPS systems.</li>
+        </ul>
+        <h4>Legal Issues</h4>
+        <p>Governed by the <em>Tallinn Manual</em>; targeting civilian infrastructure risks retaliation or UN sanctions.</p>
+
+        <h3>Defensive Cyber Strategy</h3>
+        <p><strong>Goal:</strong> Protect Lebanon’s transport systems from attacks.</p>
+        <ul>
+            <li><strong>Network Segmentation:</strong> Isolate critical systems to limit damage.</li>
+            <li><strong>IDS Systems:</strong> Detect DDoS or ransomware attempts.</li>
+            <li><strong>Backups & Encryption:</strong> Ensure operations continue despite attacks.</li>
+        </ul>
+        <h4>Recommended Defensive Tools</h4>
+        <ul>
+            <li><strong>Firewalls:</strong> Block unauthorized traffic.</li>
+            <li><strong>Endpoint Detection & Response (EDR):</strong> Monitor devices for threats.</li>
+            <li><strong>Disaster Recovery Plan (DRP):</strong> Keep operations running during disruptions.</li>
+        </ul>
+        <h4>Legal Issues</h4>
+        <p>Defense must comply with sovereignty laws; cooperation with international partners (e.g., IMO) may be required.</p>
+
+        <h3>Summary</h3>
+        <ul>
+            <li><strong>Offensive Tools:</strong> Ransomware, botnets, IoT exploits.</li>
+            <li><strong>Defensive Tools:</strong> Firewalls, EDR, disaster recovery plans.</li>
+            <li><strong>Focus:</strong> Secure IoT and SCADA systems, monitor threats, and ensure business continuity.</li>
+        </ul>
+        <p>This operation highlights Lebanon’s need for both offensive and defensive strategies to protect its transportation infrastructure from cyber threats.</p>
+    </div>
+</body>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebanon Cyber Warfare Branch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="navbar">
+        <img src="Lebanon-Logo.png" alt="Lebanon Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="executiveSummary.html">Executive Summary</a></li>
+            <li><a href="cyberMission.html">Cyber Mission Page</a></li>
+            <li><a href="part1.html">Part 1</a></li>
+            <li><a href="part2.html">Part 2</a></li>
+            <li><a href="part3.html">Part 3</a></li>
+            <li><a href="part4.html">Part 4</a></li>
+            <li><a href="part5.html">Part 5</a></li>
+            <li><a href="riskEvaluation.html">Risk Evaluation</a></li>
+            <li><a href="training.html">Training Page</a></li>
+            <li><a href="HonorsAddendums.html">Honors Addendums</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </div>
+</head>
+<body>
+    
+    <!-- Chart Page Content -->
+    <h1>Part 1 - Nation-State Infrastructure</h1>
+    <div style="margin-left: 30px; margin-right: 30px;">
+        <img src="LB Hierarchy.jpg" alt="Lebanon Hierarchy" style="display: block; margin: 0 auto;">
+        <h2>Cybersecurity Hierarchy</h2>
+        <p>Microsoft, as well as other organizations post information about tracked Lebanon <strong> Advanced Persistent Threats</strong>. Below are the <strong>APTs</strong> and their <strong>Tactics</strong>, <strong>Techniques</strong>, and <strong>Procedures</strong>. </p>
+    </div>
+    <div style="margin-left: 30px; margin-right: 30px;">
+        <br>
+        <h3>Polonium-Plaid Rain</h3>
+        <p>This Group is believed to have been active since September 2021. MSTIC (Microsoft Threat Intelligence) states that they are highly confident this group is based in Lebanon. While Polonium has not been given an official APT number, this group is still big enough to be being tracked by multiple threat intelligence teams for its activities. MSTIC also states that they are moderate confidence that Polonium coordinates operations with multiple tracked Iranian Threat Actors based on victimm overlap, as well as common attack vectors and tools.  </p>
+        <h4>Targets</h4>
+        <p>Poloniums targets include many different organizations within Israel.</p>
+        <h4>Attack Vectors (Arghire, 2023)</h4>
+        <ul>
+            <li><strong>CreepyDrive</strong>-Powershell Backdoor - supports Command Execution</li>
+            <li><strong>CreepySnail</strong>-Powershell Backdoor - supports Command Execution</li>
+            <li><strong>DeepCreep</strong>-C# Backdoor - can retrieve commands from text files on Dropbox - can upload/download files to/from the cloud service - achieves persistance by placing a shortcut file in the Startup folder and by creating a scheduled task </li>
+            <li><strong>MegaCreep</strong>-Retrieves commands from text files stored in Mega cloud storage - appears to be newer version of DeepCreep, reusing some of its code</li>
+            <li><strong>FlipCreep</strong>-C# Backdoor that reads commands from a text file on an FTP server</li>
+            <li><strong>TechnoCreep</strong>-Relies on TCP sockets for C&C communication</li>
+            <li><strong>PapaCreep</strong>-C++ Backdoor that uses different components to read commands from a file, to communicate with the C&C server, to upload files to the C&C server, and to download files from the server</li>
+        </ul>
+        <br>
+        <h3>Volatile Cedar-Lebanese Cedar-Caterpillar-Explosive RAT Group</h3>
+        <p>Volatile Cedar is a Lebanese cyber-espionage group active since 2012, targeting individuals, companies, and institutions worldwide. The group's activities are driven by political and ideological objectives, aligning with broader regional agendas.</p>
+        <h4>Targets</h4>
+        <p>Defense Contractors, Media Companies, Telecomunications Organizations, and Educational Institutions in Israel, US, UK, Lebanon, and Egypt. </p>
+        <h4>Attack Vectors (Volatile CeDAr, Lebanese Cedar, Group G0123 | MITRE ATT&CK®, n.d.)</h4>
+        <ul>
+            <li><strong>Active Scanning: Vulnerability scanning</strong>-Scans of target server</li>
+            <li><strong>Active Scanning: Wordlist Scanning</strong>-used DirBuster and GoBuster to bruteforce web directories and DNS subdomains</li>
+            <li><strong>Exploit Public-Facing Application</strong>-targeted publicly facing web servers, with both automatic and manual vulnerability discovery.</li>
+            <li><strong>Ingress Tool Transfer</strong>-can deploy additional tools.</li>
+            <li><strong>Server Software Component: Web Shell</strong>-an inject web shell code into a server.</li>
+        </ul>
+        <br>
+        <h3>Dark Caracal-BlackOasis-ZooPark-LGSD</h3>
+        <p>Dark Caracal is a threat group linked to the Lebanese General Directorate of General Security (GDGS) and has been active since at least 2012. The group is involved in cyber-espionage campaigns targeting a range of global victims, often focusing on government and military sectors.</p>
+        <h4>Targets</h4>
+        <p>Military Personnel, Activists, Government Officials, IT Institutions, Defense Contractors, Healthcare- Germany, France, Middle Eastern Countries.</p>
+        <h4>Attack Vectors (Dark Caracal, Group G0070 | MITRE ATT&CK®, n.d.)</h4>
+        <ul>
+            <li><strong>Application Layer Protocol: Web Protocols</strong>-Dark Caracal's version of Bandook communicates with their server over a TCP port using HTTP payloads Base64 encoded and suffixed with the string "&&&".</li>
+            <li><strong>Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder</strong>-adds a registry key to HKEY_USERS\Software\Microsoft\Windows\CurrentVersion\Run for persistence</li>
+            <li><strong>Command and Scripting Interpreter: Windows Command Shell</strong></li>
+            <li><strong>Data from Local System</strong>-Collected data from files</li>
+            <li><strong>Drive-by Compromise</strong></li>
+            <li><strong>File and Directory Discovery</strong></li>
+            <li><strong>Obfuscated Files or Information: Software Packing</strong></li>
+            <li><strong>Obfuscated Files or Information: Encrypted/Encoded File</strong></li>
+            <li><strong>Phishing: Spearphishing via Service</strong></li>
+            <li><strong>Screen Capture</strong>-using Malware</li>
+            <li><strong>System Binary Proxy Execution: Compiled HTML File</strong></li>
+            <li><strong>User Execution: Malicious File</strong>-makes their malware look like Flash Player, Office, or PDF documents in order to entice a user to click on it</li>
+            <li><strong>Application Layer Protocol: Web Protocols</strong>-implants using standard HTTP communication</li>
+        </ul>
+    </div>
+    <div>
+        <div style="margin-left: 30px; margin-right: 30px;">
+            <h1>Mission Statement</h1>
+            <p>Lebanon's Cyber Warfare department strengthens law enforcements in reducing the impact of cyber threats. They provide relevant <strong> smart data and threat reports </strong> using an innovative reliable framework. (Lebanon CERT, 2024)</p>
+        </div>
+        <div style="margin-left: 30px; margin-right: 30px;">
+            <h1>5 Critical Objectives</h1>
+            <ol>
+                <li>Developing Strong Relationships with Police and Military Law Enforcement units</li>
+                <li>Developing Strong Cyber Warfare Skills among Military Members through Higher Education</li>
+                <li>Aggregating and Analyzing Threat Data</li>
+                <li>Innovating Threat Intelligence to become a Leader in the Threat Intelligence World</li>
+                <li>Sharing and Acting Upon Creative, Relevant, and Strong Internally Created Threat Reports and Dashboards</li>
+            </ol>
+        </div>
+    </div>
+        
+    <!-- Operatives Page Content -->
+    <div style="margin-left: 30px; margin-right: 30px;">
+        <h1>Operatives Section</h1>
+        <h2>Lebanon's Cyber Team</h2>
+
+        <!-- Head of Cyberwarfare Section -->
+        <section>
+            <h3>Head of Cyberwarfare</h3>
+            <p>Lebanon's head of cyberwarfare remains unknown largely due to the country's relatively small size and limited resources in the realm of cyberspace. Unlike larger countries with more detailed cyber infrastructure and better established cybersecurity frameworks, Lebanon's cyber capabilities are still developing. Because of this, the knowledge of who the head of Cyberwarfare is able to remain unknown to the public. </p>
+        </section>
+
+        <!-- Military-Government Cyber Subordinates Section -->
+        <section>
+            <h3>Military-Government Cyber Subordinates</h3>
+            <p><strong>President of Lebanon Michel Aoun</strong>
+            <p>As the head of state, the president is the supreme commander of the Lebanese Armed Forces and ultimately oversees national defense and security. Although not directly involved in cyber operations, the president’s leadership influences national policies, including cyber defense strategy.</p>
+            <p><strong>Prime Minister of Lebanon Najib Mikati</strong>
+            <p>The Prime Minister heads the executive branch of the government. He has oversight of the Ministry of Defense and the Ministry of Interior and Municipalities, both of which contain divisions responsible for national security, including cybersecurity.</p>
+            <p><strong>Minister of Defense Maurice Slim</strong>
+            <p>The Ministry of Defense is responsible for national defense, which includes military cybersecurity initiatives. The Ministry oversees the armed forces, where the Military Intelligence Directorate plays a role in cyber warfare and defense strategies</p>
+            <p><strong>Commander of Lebanese Armed Forces General Joseph Aoun</strong>
+            <p>The commander leads the entire military, including the intelligence and cybersecurity units. Under his command, the Military Intelligence Directorate plays a key role in protecting military networks and critical infrastructure from cyber threats.</p>
+            <p><strong>Military Intelligence Directorate Brigadier General Wissam Safi</strong>
+            <p>This directorate is responsible for intelligence gathering, including in cyberspace. It oversees cybersecurity operations within the military, focusing on the protection of military systems, counter-cyberespionage, and ensuring the integrity of communication systems.</p>
+            <p><strong>Minister of Interior and Municipalities</strong>
+            <p>The General Directorate of General Security oversees national security matters, including surveillance and counterintelligence, which increasingly involve cyberspace activities. The General Security agency would be responsible for monitoring and addressing cyber threats that impact national security</p>
+            <p><strong>Deputy Director-General</strong>
+            <p>The Deputy Director-General oversees critical divisions that deal with cybersecurity. These divisions include counterintelligence and the cybersecurity division, both key in combating cyber threats to the nation.</p>
+        </section>
+
+        <!-- Cyber-Operatives: APT Groups Section -->
+        <section>
+            <h3>Cyber-Operatives: Advanced Persistent Threats (APTs)</h3>
+            <div class="apt-section">
+                <h4>APT List</h4>
+                <p><strong>Polonium-Plaid Rain</strong></p>
+                <p><strong>Volatile Cedar</strong></p>
+                <p><strong>Dark Caracal</strong></p>
+                <p>For detailed descriptions of each the APTs mentioned above, including their tactics, techniques, and specific attack vectors, please refer to the Cyber Hierarchy section above.</p>
+            <br>
+            <h2>APTs That Have Attacked Lebanon:</h2>
+                <h4>Leafminer</h3>
+                <p> Leafminer is an Iranian threat group that has targeted government organizations and business entities in the Middle East since at least early 2017. Listed below are some of their <strong>Attack Vectors</strong>.</p>
+                <ul>
+                    <li><strong>Brute Force: Password Spraying</strong></li>
+                    <li><strong>Command and Scripting Interpreter: JavaScript</strong></li>
+                    <li><strong>Credentials from Password Stores and Web Browsers</strong></li>
+                    <li><strong>Drive-by Compromise</strong></li>
+                    <li><strong>Email Collection: Remote Email Collection</strong></li>
+                    <li><strong>OS Credential Dumping: LSASS Memory</strong></li>
+                </ul>
+                <br> 
+                <h3>Molerats</h3>
+                <p>Molerats is an Arabic-speaking, politically-motivated threat group that has been operating since 2012. The group's victims have primarily been in the Middle East, Europe, and the United States. Listed below are some of their <strong>Attack Vectors</strong>.</p>
+                <ul>
+                    <li><strong>Command and Scripting Interpreter: PowerShell</strong></li>
+                    <li><strong>Ingress Tool Transfer</strong></li>
+                    <li><strong>Phishing: Spearphishing Attachment</strong></li>
+                    <li><strong>Process Discovery</strong></li>
+                    <li><strong>User Execution: Malicious Link</strong></li>
+                    <li><strong>User Execution: Malicious File</strong></li>
+                </ul>
+                <br> 
+                <h3>MuddyWater</h3>
+                <p>MuddyWater is a cyber espionage group assessed to be a subordinate element within Iran's Ministry of Intelligence and Security (MOIS).[1] Since at least 2017, MuddyWater has targeted a range of government and private organizations across sectors, including telecommunications, local government, defense, and oil and natural gas organizations, in the Middle East, Asia, Africa, Europe, and North America. Listed below are some of their <strong>Attack Vectors</strong>.</p>
+                <ul>
+                    <li><strong>Abuse Elevation Control Mechanism: Bypass User Account Control</strong></li>
+                    <li><strong>Boot or Logon Autostart Execution: Registry Run Keys / Startup Folderr</strong></li>
+                    <li><strong>Phishing: Command and Scripting Interpreter: Windows Command Shell</strong></li>
+                    <li><strong>Credentials from Password Stores and Web Browsers</strong></li>
+                    <li><strong>Data Encoding: Standard Encoding</strong></li>
+                    <li><strong>Exploitation of Remote Services</strong></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
